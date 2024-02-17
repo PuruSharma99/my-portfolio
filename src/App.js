@@ -45,7 +45,7 @@ const contactsData = [
     title: "GitHub",
   },
   {
-    link: "https://drive.google.com/file/d/1d-bUl-g1IuJWRpnsyf1b-Du_a01tBA4k/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1Dy-u1fgAN1nKb0_K0Xz43AYqd-7Y2iZq/view?usp=sharing",
     image: "./assets/Resume.jpg",
     title: "Resume",
   },
