@@ -24,13 +24,13 @@ const projectsData = [
     image: "./assets/world.jpg",
     link: "https://world-gallery.vercel.app/",
   },
-  // {
-  //   title: "Burger Builder",
-  //   description:
-  //     "Craft the ultimate burger experience, a symphony of flavors curated to delight your taste buds. Let's build the burger of your dreams together! :)",
-  //   image: "./assets/burger.jpg",
-  //   link: "https://my-burger-app.vercel.app/",
-  // },
+  {
+    title: "Burger Builder",
+    description:
+      "Craft the ultimate burger experience, a symphony of flavors curated to delight your taste buds. Let's build the burger of your dreams together! :)",
+    image: "./assets/burger.jpg",
+    link: "https://my-burger-app.vercel.app/",
+  },
 ];
 
 const contactsData = [
