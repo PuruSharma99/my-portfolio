@@ -9,11 +9,11 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 const skillsData = {
-  frontend: ["React.js", "JSX", "JavaScript", "Redux", "HTML"],
-  styling: ["Tailwind CSS", "CSS3", "Responsive Design"],
+  frontend: ["React.js","TypeScript", "JSX", "JavaScript", "Redux", "HTML"],
+  styling: ["Tailwind CSS", "CSS3", "Responsive Design", "Ant Design", "Material UI"],
   tools: ["VS Code", "Webstorm", "Postman"],
   version_Control: ["Git", "GitHub", "Bitbucket"],
-  others: ["Zeplin"],
+  others: ["Figma", "Zeplin"],
 };
 
 const projectsData = [
@@ -45,7 +45,7 @@ const contactsData = [
     title: "GitHub",
   },
   {
-    link: "https://drive.google.com/file/d/1Wj-GbKXHNMVDR87ABZSeous7h5gG_2Nm/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1CWYjEb4GiQXSO_T2hyOZSd-RnFeWviPK/view?usp=sharing",
     image: "./assets/Resume.jpg",
     title: "Resume",
   },
