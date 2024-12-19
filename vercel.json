@@ -1,0 +1,18 @@
+{
+    "builds": [
+      {
+        "src": "index.html",
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*).js",
+        "headers": {
+          "Content-Type": "application/javascript"
+        },
+        "dest": "/$1.js"
+      }
+    ]
+  }
+  
