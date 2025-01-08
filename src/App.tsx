@@ -77,7 +77,7 @@ const contactsData: ContactData[] = [
     title: "GitHub",
   },
   {
-    link: "https://drive.google.com/file/d/1mCXgtvwMF2KvF32D2qgaWXBO83X483ea/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1HuGIwPix8qHJY8GXoBNjwTULUi7CWrka/view?usp=sharing",
     image: "/src/assets/Resume.jpg",
     title: "Resume",
   },
