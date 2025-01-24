@@ -1,16 +1,6 @@
 import React from "react";
-import "../App.css";
 
-// Define props interface
-interface ContactProps {
-  contacts: {
-    link: string;
-    image: string;
-    title: string;
-  }[];
-}
-
-const Contact: React.FC<ContactProps> = ({ contacts }) => {
+export default function Contact({ contacts }) {
   return (
     <div className="contact-container">
       <div className="hello">Contact Me</div>
@@ -37,6 +27,4 @@ const Contact: React.FC<ContactProps> = ({ contacts }) => {
       </div>
     </div>
   );
-};
-
-export default Contact;
+}

@@ -1,12 +1,6 @@
 import React from "react";
-import "../App.css";
 
-// Define props interface
-interface AboutProps {
-  name: string;
-}
-
-const About: React.FC<AboutProps> = (props) => {
+export default function About(props) {
   return (
     <div className="about">
       <span className="hello">Hello,</span>
@@ -21,8 +15,8 @@ const About: React.FC<AboutProps> = (props) => {
         </div>
         <div className="abt-det">
           I'm all about making websites look cool and work smoothly. I love
-          turning designs into real, clickable things on the internet. With
-          over 1.5 years+ of experience with React.js and JavaScript.
+          turning designs into real, clickable things on the internet. With over
+          1.8 years+ of experience with React.js and JavaScript.
         </div>
         <div className="abt-det">
           My code is more than syntax; it's a language that speaks to users,
@@ -37,6 +31,4 @@ const About: React.FC<AboutProps> = (props) => {
       </div>
     </div>
   );
-};
-
-export default About;
+}

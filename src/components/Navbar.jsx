@@ -1,21 +1,13 @@
 import React, { useState } from "react";
 
-// Define the type for the `onButtonClick` prop
-interface NavbarProps {
-  onButtonClick: (component: ComponentName) => void;
-}
+export default function Navbar({ onButtonClick }) {
+  const [activeButton, setActiveButton] = useState("Home");
+  const [burgerMenuOpen, setBurgerMenuOpen] = useState(false);
 
-// Define the component names as a union type
-type ComponentName = "Home" | "About" | "Skills" | "Projects" | "Contact";
-
-const Navbar: React.FC<NavbarProps> = ({ onButtonClick }) => {
-  const [activeButton, setActiveButton] = useState<ComponentName>("Home");
-  const [burgerMenuOpen, setBurgerMenuOpen] = useState<boolean>(false);
-
-  const handleButtonClick = (component: ComponentName) => {
-    setActiveButton(component);
-    onButtonClick(component);
-    setBurgerMenuOpen(false); // Close burger menu when a button is clicked
+  const handleButtonClick = (component) => {
+    setActiveButton(component); // Update active button state
+    onButtonClick(component); // Notify App.jsx about the active component
+    setBurgerMenuOpen(false); // Close the burger menu
   };
 
   const toggleBurgerMenu = () => {
@@ -64,6 +56,4 @@ const Navbar: React.FC<NavbarProps> = ({ onButtonClick }) => {
       </div>
     </div>
   );
-};
-
-export default Navbar;
+}

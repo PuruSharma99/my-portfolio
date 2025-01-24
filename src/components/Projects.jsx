@@ -1,20 +1,6 @@
 import React from "react";
-import "../App.css";
 
-// Define the type for a single project
-interface Project {
-  title: string;
-  description: string;
-  image: string;
-  link: string;
-}
-
-// Define the props for the Projects component
-interface ProjectsProps {
-  projects: Project[];
-}
-
-const Projects: React.FC<ProjectsProps> = ({ projects }) => {
+export default function Projects({ projects }) {
   return (
     <div className="project-container">
       <div className="pro-head">Here are my top Projects:</div>
@@ -49,6 +35,4 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
       </div>
     </div>
   );
-};
-
-export default Projects;
+}

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Footer: React.FC = () => {
+export default function Footer() {
   return (
     <div className="footerContainer">
       Developed By
@@ -14,6 +14,4 @@ const Footer: React.FC = () => {
       </a>
     </div>
   );
-};
-
-export default Footer;
+}
