@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 export default function About(props) {
   return (
@@ -14,13 +14,13 @@ export default function About(props) {
           skills and expanding my expertise.
         </div>
         <div className="abt-det">
-          I'm all about making websites look cool and work smoothly. I love
+          I&apos;m all about making websites look cool and work smoothly. I love
           turning designs into real, clickable things on the internet. With over
           1.8 years+ of experience with React.js and JavaScript.
         </div>
         <div className="abt-det">
-          My code is more than syntax; it's a language that speaks to users,
-          creating web experiences that seamlessly bridge the gap between
+          My code is more than syntax; it&apos;s a language that speaks to
+          users, creating web experiences that seamlessly bridge the gap between
           technology and human connection.
         </div>
         <div className="abt-det">
@@ -32,3 +32,7 @@ export default function About(props) {
     </div>
   );
 }
+
+About.propTypes = {
+  name: PropTypes.string.isRequired,
+};

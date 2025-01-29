@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import PropTypes from "prop-types";
 
 export default function Navbar({ onButtonClick }) {
   const [activeButton, setActiveButton] = useState("Home");
@@ -16,7 +17,7 @@ export default function Navbar({ onButtonClick }) {
 
   return (
     <div className="navbar">
-      <img src="/src/assets/logo.png" alt="Logo" className="logo" />
+      <img src="/images/logo.png" alt="Logo" className="logo" />
       <div className={`buttons ${burgerMenuOpen ? "show" : ""}`}>
         <span
           className={`btn ${activeButton === "Home" ? "active" : ""}`}
@@ -57,3 +58,7 @@ export default function Navbar({ onButtonClick }) {
     </div>
   );
 }
+
+Navbar.propTypes = {
+  onButtonClick: PropTypes.func.isRequired,
+};

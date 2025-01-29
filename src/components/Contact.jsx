@@ -1,11 +1,12 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 export default function Contact({ contacts }) {
   return (
     <div className="contact-container">
       <div className="hello">Contact Me</div>
       <div className="bio">
-        Let's connect! Feel free to reach out to me through my social media.
+        Let&apos;s connect! Feel free to reach out to me through my social
+        media.
       </div>
       <div className="links">
         {contacts.map((contact, index) => (
@@ -28,3 +29,13 @@ export default function Contact({ contacts }) {
     </div>
   );
 }
+
+Contact.propTypes = {
+  contacts: PropTypes.arrayOf(
+    PropTypes.shape({
+      link: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};

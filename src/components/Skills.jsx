@@ -1,5 +1,6 @@
-import  { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import PropTypes from "prop-types";
 
 export default function Skills({ headLine, skillHead, skills }) {
   const skillsRef = useRef(null); // Ref to apply animation to the skill list
@@ -37,3 +38,9 @@ export default function Skills({ headLine, skillHead, skills }) {
     </div>
   );
 }
+
+Skills.propTypes = {
+  headLine: PropTypes.string,
+  skillHead: PropTypes.string.isRequired,
+  skills: PropTypes.arrayOf(PropTypes.string).isRequired,
+};

@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export default function Projects({ projects }) {
   return (
     <div className="project-container">
@@ -34,3 +36,14 @@ export default function Projects({ projects }) {
     </div>
   );
 }
+
+Projects.propTypes = {
+  projects: PropTypes.arrayOf(
+    PropTypes.shape({
+      link: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
