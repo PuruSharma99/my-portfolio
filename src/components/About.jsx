@@ -16,7 +16,7 @@ export default function About(props) {
         <div className="abt-det">
           I&apos;m all about making websites look cool and work smoothly. I love
           turning designs into real, clickable things on the internet. With over
-          1.8 years+ of experience with React.js and JavaScript.
+          2 years of experience with React.js and JavaScript.
         </div>
         <div className="abt-det">
           My code is more than syntax; it&apos;s a language that speaks to
