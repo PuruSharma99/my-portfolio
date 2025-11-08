@@ -68,7 +68,7 @@ export default function App() {
       title: "GitHub",
     },
     {
-      link: "https://drive.google.com/file/d/1exwih4crFaG1yYXMkpeQR9tj23NmfOcm/view?usp=sharing",
+      link: "https://drive.google.com/file/d/1sRSxetiEY3bjyDVH_yVyVbYcFcF9xbqP/view?usp=sharing",
       image: "/images/resume.jpg",
       title: "Resume",
     },
